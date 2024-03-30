@@ -1,0 +1,57 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Niveles de Severidad
+
+Uno de los factores más importantes al priorizar la corrección de errores es determinar si el error bloquea a los usuarios o no. En el contexto de la priorización de productos, un usuario está "bloqueado" cuando no puede continuar a través del embudo esperado debido al error.
+
+<Callout emoji="⚠️">
+Un **embudo** se refiere al proceso o camino que un usuario sigue en una aplicación o sitio web, desde el descubrimiento hasta la conversión o completar una acción clave.
+</Callout>
+
+Los errores se clasifican en cuatro niveles de severidad según su impacto en los usuarios:
+
+### Máxima Severidad
+
+Estos son errores que **bloquean a la mayoría de los usuarios** de usar el producto. Por ejemplo:
+
+- Un error que evita que los usuarios inicien sesión o se registren.
+- Un error en el proceso de pago que impide realizar compras.
+- Un error que hace que la aplicación se bloquee o se cierre inesperadamente para la mayoría de los usuarios.
+
+Los errores de máxima severidad deben ser priorizados y resueltos de inmediato, ya que impiden que la mayoría de los usuarios utilicen el producto principal.
+
+### Alta Severidad
+
+Estos son errores que **bloquean a algunos usuarios**. Por ejemplo:
+
+- Un error que impide que ciertos usuarios actualicen su perfil.
+- Un error que bloquea a los usuarios con determinados dispositivos o sistemas operativos.
+- Un error que impide que algunos usuarios accedan a una funcionalidad clave.
+
+Aunque no afectan a la mayoría de los usuarios, estos errores de alta severidad deben ser priorizados por encima de los de menor severidad, ya que bloquean a un subconjunto significativo de usuarios.
+
+### Severidad Media
+
+Estos son errores que **la mayoría de los usuarios experimentan**, pero no los bloquean. Por ejemplo:
+
+- Un error de visualización o diseño que causa confusión o frustración.
+- Un error que ralentiza el rendimiento de la aplicación, pero no la bloquea.
+- Un error que causa problemas menores de uso.
+
+Estos errores deben ser priorizados después de los errores de máxima y alta severidad, pero antes de los de baja severidad.
+
+### Baja Severidad
+
+Estos son errores que **algunos usuarios experimentan** y no los bloquean. Por ejemplo:
+
+- Un error tipográfico o de redacción en el contenido.
+- Un error de visualización menor que no afecta la funcionalidad.
+- Un error que solo se produce en situaciones o casos de uso poco frecuentes.
+
+Estos errores tienen la prioridad más baja, ya que solo afectan a una pequeña minoría de usuarios y no impiden el uso principal del producto.
+
+<Callout emoji="💡">
+Es importante tener en cuenta que la clasificación de severidad puede variar según el contexto del producto y las necesidades del negocio. Siempre es recomendable evaluar cada error en su contexto específico y priorizar en consecuencia.
+</Callout>
+
+Al priorizar la corrección de errores, el [nivel de severidad](/priorizando-correcciones-errores) es un factor clave, pero también se deben considerar otros factores, como el [esfuerzo requerido](/priorizando-nuevas-funcionalidades-tareas/complejidad-implementacion) para solucionarlos y el impacto en los [KPIs principales](/priorizando-nuevas-funcionalidades-tareas/kpi-principal).

@@ -1,0 +1,40 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# 📐 Diseñar
+
+En este paso, el diseñador de producto crea la experiencia del usuario para la funcionalidad. Esto incluye las tareas, navegación, flujo e interfaces necesarias para que el producto sea tanto utilizable (los usuarios pueden descubrir cómo usarlo) como deseable (los usuarios querrán usarlo).
+
+<Callout>
+Idealmente, el diseño debe seguir un lenguaje de diseño establecido para mantener la consistencia en todo el producto.
+</Callout>
+
+## Nivel de detalle
+
+El nivel de detalle del diseño dependerá del equipo. Algunos equipos pueden preferir diseños de alto nivel, mientras que otros pueden requerir especificaciones más granulares. 
+
+Como regla general, los product managers deben inclinarse por la claridad sobre explicar lo obvio. Proporcionar detalles suficientes ayudará al equipo de ingeniería a comprender el alcance del trabajo y reducir la ansiedad.
+
+## Documentación del diseño
+
+Además de los artefactos de diseño (wireframes, mockups, prototipos), considere documentar aspectos clave del diseño, como:
+
+- Casos de uso
+- Mapas de historias de usuario 
+- Lista de interacciones de la interfaz de usuario
+
+Esta documentación servirá como una valiosa referencia para el equipo de ingeniería durante la implementación. También ayuda a preservar el conocimiento del proyecto a largo plazo, lo que permite mejoras continuas del producto. Consulte la sección [📝 Especificar](/flujo-de-trabajo/especificar) para obtener más detalles.
+
+## Ejemplo
+
+Aquí hay un ejemplo simplificado de un flujo de diseño para una funcionalidad de "Descargar muestras" en un sitio web de servicios creativos:
+
+```mermaid
+graph TD;
+    A[Página de búsqueda] --> B{¿Muestras disponibles?};
+    B --> |Sí| C[Mostrar botón "Descargar muestras"];
+    C --> D[Página de descarga de muestras];
+    D --> E[Descargar archivo ZIP];
+    B --> |No| F[No mostrar botón];
+```
+
+Con un diseño bien pensado, estará listo para pasar al siguiente paso: [🛠 Crear Prototipo](/flujo-de-trabajo/crear-prototipo). ¡Sigamos adelante con el experimento!

@@ -1,0 +1,55 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Priorizando Nuevas Funcionalidades y Tareas
+
+La ecuación clave para priorizar nuevas funcionalidades y tareas es:
+
+```
+Prioridad = (Efecto en KPI Principal * Probabilidad de Éxito) / Complejidad de Implementación
+```
+
+<Callout>
+Esta fórmula refleja la idea de identificar los "frutos bajos" - esfuerzos que son fáciles de alcanzar y no requieren mucho trabajo en comparación con el impacto que pueden generar.
+</Callout>
+
+A continuación, desglosaremos cada componente de la ecuación.
+
+### Efecto en KPI Principal
+
+El [Efecto en KPI Principal](/priorizando-nuevas-funcionalidades-tareas/kpi-principal) mide el impacto esperado de una nueva funcionalidad o tarea en la métrica clave de tu producto. Puedes expresarlo como un número absoluto (ej. 50.000 verificaciones adicionales por año), un porcentaje (ej. 20% más verificaciones) o un valor monetario (ej. $500k en proyectos adicionales por mes).
+
+<Callout>
+El KPI Principal puede variar según tu producto y negocio. En Bunny Studio, por ejemplo, es el número de proyectos completados, mientras que en Voice123 son los proyectos y mensajes enviados.
+</Callout>
+
+### Probabilidad de Éxito
+
+La [Probabilidad de Éxito](/priorizando-nuevas-funcionalidades-tareas/probabilidad-exito) es una estimación de la certeza de que el esfuerzo producirá el efecto esperado en el KPI Principal. Se expresa como un porcentaje entre 0% y 100%. Al principio, es solo una suposición arriesgada que puedes refinar más adelante con prototipos y pruebas A/B.
+
+### Complejidad de Implementación
+
+La [Complejidad de Implementación](/priorizando-nuevas-funcionalidades-tareas/complejidad-implementacion) captura el nivel de esfuerzo requerido para implementar la nueva funcionalidad o tarea. Puede ser una estimación de horas de trabajo o una escala de Fibonacci. Es importante que esta estimación incluya las perspectivas del gerente de producto, el diseñador de producto y el líder técnico.
+
+<Steps>
+
+### Paso 1
+
+Calcula el Efecto en KPI Principal, la Probabilidad de Éxito y la Complejidad de Implementación para cada nueva funcionalidad o tarea.
+
+### Paso 2 
+
+Inserta estos valores en la fórmula para obtener una puntuación de prioridad.
+
+### Paso 3
+
+Ordena todas las nuevas funcionalidades y tareas de mayor a menor puntuación de prioridad.
+
+</Steps>
+
+<Callout>
+Ejemplo: Una nueva funcionalidad espera aumentar el KPI Principal en un 30%, con una probabilidad de éxito del 10% y 15 horas de trabajo requeridas. Su puntuación de prioridad sería:
+
+(0.3 * 0.1) / 15 = 0.002
+</Callout>
+
+Es crucial que uses la misma fórmula y unidades para todas las nuevas funcionalidades y tareas que estés priorizando. Esto asegura una comparación justa.

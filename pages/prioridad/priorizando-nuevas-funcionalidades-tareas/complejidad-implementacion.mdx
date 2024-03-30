@@ -1,0 +1,42 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Complejidad de Implementación
+
+La complejidad de implementación intenta capturar el nivel de esfuerzo requerido para implementar una nueva funcionalidad o tarea. Es una estimación clave que, junto con el [impacto esperado en el KPI principal](/priorizando-nuevas-funcionalidades-tareas/kpi-principal) y la [probabilidad de éxito](/priorizando-nuevas-funcionalidades-tareas/probabilidad-exito), nos permite priorizar esfuerzos de manera efectiva.
+
+<Callout emoji="💡">
+Idealmente, la estimación de complejidad de implementación debe ser influenciada por las opiniones del gerente de producto, diseñador de producto y líder técnico. Esto asegura que se consideren todos los aspectos relevantes.
+</Callout>
+
+El valor de la complejidad de implementación puede expresarse de dos formas comunes:
+
+1. **Horas de trabajo**: Una estimación del tiempo de trabajo necesario para completar la tarea, expresada en horas.
+
+2. **Escala de Fibonacci**: Una estimación relativa usando la secuencia de Fibonacci (1, 2, 3, 5, 8, 13, etc.), donde cada número representa una complejidad relativa a los demás.
+
+<Callout emoji="⚠️">
+Independientemente de la unidad elegida, es crucial utilizar la misma para todas las tareas que se están priorizando. De lo contrario, las comparaciones serían inconsistentes.
+</Callout>
+
+### Ejemplos
+
+Supongamos que estamos priorizando dos nuevas funcionalidades para un producto de gestión de proyectos:
+
+1. **Tablero de Tareas Compartido**: Permitir que múltiples usuarios vean y colaboren en el mismo tablero de tareas.
+2. **Integración con Servicio de Almacenamiento en la Nube**: Permitir adjuntar archivos desde un servicio de almacenamiento en la nube al crear tareas.
+
+Si estimamos usando horas de trabajo, podríamos tener:
+
+- Tablero de Tareas Compartido: 80 horas
+- Integración con Servicio de Almacenamiento en la Nube: 20 horas
+
+O si usamos la escala de Fibonacci:
+
+- Tablero de Tareas Compartido: 13
+- Integración con Servicio de Almacenamiento en la Nube: 3
+
+<Callout emoji="📝">
+Recuerda documentar quién realizó la estimación y cuándo se calculó. Esto facilitará revisar y actualizar las estimaciones en el futuro.
+</Callout>
+
+Al priorizar estas funcionalidades, la complejidad de implementación se considerará junto con el [impacto en el KPI principal](/priorizando-nuevas-funcionalidades-tareas/kpi-principal) y la [probabilidad de éxito](/priorizando-nuevas-funcionalidades-tareas/probabilidad-exito). Aquellas con un alto impacto esperado, alta probabilidad de éxito y baja complejidad de implementación generalmente tendrán una prioridad más alta.

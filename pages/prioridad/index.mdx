@@ -1,0 +1,47 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Introducción
+
+**Prioridad** es un marco probado para priorizar nuevas funcionalidades de productos, defectos de diseño de productos (tareas) y errores. Este enfoque sistemático te ayudará a determinar en qué trabajar primero, maximizando el impacto de los esfuerzos de tu equipo.
+
+<Callout>
+La priorización efectiva es clave para el éxito de cualquier producto. Al enfocar los recursos en las iniciativas correctas, puedes mejorar la experiencia del usuario, impulsar el crecimiento y aumentar la rentabilidad.
+</Callout>
+
+¿Alguna vez has sentido que tu equipo está trabajando en demasiadas cosas a la vez, sin un rumbo claro? O quizás has luchado por decidir qué nuevas características implementar o qué errores corregir primero. El marco Prioridad te brinda una manera estructurada de abordar estos desafíos.
+
+La clave es calcular una puntuación de prioridad para cada esfuerzo potencial, teniendo en cuenta tres factores principales:
+
+1. **Efecto en el KPI Principal**: ¿Cuál será el impacto esperado en tu métrica clave de rendimiento (KPI) si se implementa esta iniciativa?
+2. **Probabilidad de Éxito**: ¿Cuáles son las posibilidades de que esta iniciativa logre el efecto deseado en el KPI?
+3. **Complejidad de Implementación**: ¿Qué tan difícil será llevar a cabo esta iniciativa?
+
+<Steps>
+
+### Paso 1: Identifica tu KPI Principal
+
+Tu KPI Principal es la métrica que mejor refleja la interacción principal de tu producto. Por ejemplo, para un servicio de transmisión de video, podría ser "horas de visualización". Para una aplicación de citas, podría ser "matches exitosos".
+
+### Paso 2: Calcula la Puntuación de Prioridad
+
+Para cada iniciativa potencial (nueva funcionalidad, tarea o corrección de error), estima su Efecto en el KPI Principal, Probabilidad de Éxito y Complejidad de Implementación. Luego, calcula la Puntuación de Prioridad usando esta fórmula:
+
+```mermaid
+flowchart LR
+    A[Puntuación de Prioridad] --> B{Efecto en KPI Principal}
+    A --> C{Probabilidad de Éxito}
+    A --> D{Complejidad de Implementación}
+    B --> E[x]
+    C --> E
+    D --> F[/]
+    E --> G[=]
+    F --> G
+```
+
+$$\huge \text{Puntuación de Prioridad} = \frac{\text{Efecto en KPI Principal} \times \text{Probabilidad de Éxito}}{\text{Complejidad de Implementación}}$$
+
+Las iniciativas con puntuaciones más altas deben abordarse primero.
+
+</Steps>
+
+Entonces, ¿estás listo para priorizar de manera efectiva y enfocar los esfuerzos de tu equipo donde más importa? A continuación, exploraremos los diferentes tipos de tareas, cómo priorizarlas y algunos consejos prácticos. Comencemos con [Tipos de Tareas](/tipos-de-tareas).
