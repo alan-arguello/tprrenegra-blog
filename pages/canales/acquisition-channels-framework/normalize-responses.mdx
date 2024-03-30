@@ -1,0 +1,56 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# 2. Normalizar Respuestas
+
+Si utilizas un campo de texto abierto para capturar cómo los usuarios escucharon sobre ti, esta parte requiere algo de trabajo manual, pero vale la pena hacerlo. Periódicamente, necesitarás asignar cada respuesta a una categoría estándar de canal de adquisición. Idealmente, deberías almacenar esta información categorizada en tu base de datos para poder cruzarla más tarde con otras métricas como ingresos, valor de vida del cliente, etc.
+
+Aquí están algunas de las respuestas más comunes que he visto y sus respectivas asignaciones de canal:
+
+- "Colega", "Amigo", "Compañero de trabajo" → canal **Boca a Boca**
+- "Stand", "[Nombre del Evento]", "Evento" → canal **Eventos**
+- "Blog", "[Nombre de la Publicación]" → canal **PR/Medios** 
+- "Facebook", "Redes sociales", "Twitter" → canal **Redes Sociales** (en algunos casos, los usuarios pueden estar refiriéndose a un amigo o colega mencionando tu producto en redes sociales)
+- "Llamada telefónica", "Me enviaste un correo", "[Nombre del Vendedor]" → canal **Ventas Directas**
+- "Motor de búsqueda", "Google", "Bing" → canal **Motores de Búsqueda** (esto incluye tanto tráfico orgánico como pagado)
+
+<Callout>
+Una respuesta común es "en línea" o "Internet". Desafortunadamente, esto podría significar cualquier cosa (motores de búsqueda, redes sociales, blogs, etc.), por lo que estas respuestas necesitan ser descartadas.
+</Callout>
+
+<Steps>
+
+### Paso 1
+Para cada nueva respuesta, determina el canal de adquisición apropiado y asígnalo en consecuencia en tu base de datos.
+
+### Paso 2 
+Si una respuesta no encaja perfectamente en un canal existente, crea una nueva categoría de canal para ella.
+
+</Steps>
+
+Por ejemplo, en Bunny Inc., recientemente descubrimos que un conferencista brasileño del cual no teníamos conocimiento estaba promocionando nuestro servicio a cientos de asistentes a conferencias. Esto nos ayudó a identificar una oportunidad adicional en el mercado brasileño que nunca habíamos considerado.
+
+<Callout type="warning">
+Estar abierto a nuevas categorías de canales es importante, ya que puedes descubrir fuentes de adquisición que no habías contabilizado previamente.
+</Callout>
+
+En Torre, preguntamos a los que publican ofertas de trabajo y oportunidades freelance la pregunta "¿cómo te enteraste de nosotros?" justo después de publicar su anuncio. Utilizamos un campo de texto abierto para capturar sus respuestas.
+
+```mermaid
+graph TD
+    A[El usuario publica oferta de trabajo] --> B[Se le pregunta "¿Cómo te enteraste de nosotros?"]
+    B --> C{Respuesta capturada}
+    C -->|"Colega"| D[Boca a Boca]
+    C -->|"Entrada de blog"| E[PR/Medios]
+    C -->|Nueva respuesta| F[Crear nueva categoría de canal]
+```
+
+Una vez que hayas asignado respuestas a canales, es útil poder filtrar y analizar tus datos por canal. Por ejemplo, podrías calcular métricas como:
+
+Tasas de conversión por canal: $\frac{\text{Conversiones del Canal X}}{\text{Total de Visitantes del Canal X}}$
+Ingresos por canal
+Márgenes brutos por canal
+Valor de vida del cliente por canal
+Interacciones del cliente por canal
+En Bunny Inc., descubrimos que los clientes que se enteraron de nosotros a través del boca a boca tienen un valor de vida aproximadamente un 20% más alto que nuestro cliente promedio, mientras que los clientes adquiridos a través de afiliados tienen un valor de vida aproximadamente un 25% más bajo.
+
+Tener estos datos puede proporcionar percepciones valiosas sobre dónde enfocar tus esfuerzos de adquisición y gasto en marketing.
