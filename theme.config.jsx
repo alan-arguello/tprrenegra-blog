@@ -1,5 +1,5 @@
 export default {
-      logo: <span>Torrenegra Accelerator Frameworks</span>,
+      logo: <span>Torrenegra Organization Frameworks</span>,
       editLink: {
         component: null,
       },
@@ -11,7 +11,7 @@ export default {
       },
       head: (
         <>
-          <meta property="og:title" content="Torrenegra Accelerator Frameworks" />
+          <meta property="og:title" content="Torrenegra Organization Frameworks" />
           <meta property="og:description" content="Framworks para crecer tu compañía" />
           <meta name="robots" content="noindex, nofollow" />
         </>
